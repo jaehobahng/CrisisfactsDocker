@@ -1,0 +1,3 @@
+[submodule "crisisfacts_summarization"]
+	path = crisisfacts_summarization
+	url = https://github.com/jaehobahng/crisisfacts_summarization.git

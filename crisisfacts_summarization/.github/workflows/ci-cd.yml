@@ -1,0 +1,30 @@
+name: deduplication-workflow
+
+on: [push, pull_request]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+
+    - name: Access repository
+      uses: actions/checkout@v4
+
+    - name: Install poetry
+      uses: snok/install-poetry@v1
+
+    # Install package dependencies (cached)
+    - name: Install package
+      run: poetry install
+
+    - name: Run pytest
+      env: # Set environment variables globally for the job
+        IR_DATASETS_HOME: "./"
+      run: poetry run pytest
+
+

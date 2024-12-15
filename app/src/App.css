@@ -1,0 +1,273 @@
+/* Global styling for layout and readability */
+
+h1 {
+  font-family: 'Tinos', serif;
+  font-size: 35px; /* Adjusted font size */
+  color: #1B7593;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  background-color: #f4f4f9;
+  font-size: 18px;
+}
+
+p {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+/* Filters Styling */
+
+/* Center the entire filter container */
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 20px;
+  background-color: #D1E3E980; /* Light blue background */
+  padding-top: 10px; /* Add padding for spacing inside the container */
+  padding-bottom: 20px; /* Add padding for spacing inside the container */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 80%; /* Set a fixed width for the container */
+}
+
+
+.filter-title {
+  font-family: 'Tinos', serif;
+  color: #1B7593;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Row styling for filters */
+.filter-row {
+  display: flex;
+  gap: 40px; /* Space between filters */
+  justify-content: center; /* Center filters within the row */
+  align-items: flex-start; /* Align titles and dropdowns vertically */
+}
+
+/* Title styling */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between label and select */
+  color: #333;
+  text-align: center;
+}
+
+/* Dropdown filters styling */
+.filter-item select,
+.filter-item input {
+  height: 30px; /* Consistent height */
+  width: 200px; /* Set same width for both boxes */
+  font-size: 12px; /* Adjust font size for readability */
+  padding: 5px 10px; /* Inner spacing */
+  border: 1px solid #ccc; /* Light border for aesthetics */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box;
+}
+
+/* Individual filter container */
+.filter-item {
+  display: flex;
+  flex-direction: column; /* Stack label and select vertically */
+  align-items: center; /* Center align label and dropdown */
+}
+
+/* Hover effect for dropdowns */
+select:hover {
+  border-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Focus effect for dropdowns */
+select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Input text Styling */
+
+/* Style the input for rows per page */
+input[type="number"] {
+  font-size: 12px;
+  padding: 6px 10px;
+  width: 180px; /* Consistent width for dropdowns */
+  height: 30px;
+  border: 1px solid #ccc; /* Blue border for primary theme */
+  border-radius: 5px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Hover effect for the input */
+input[type="number"]:hover {
+  border-color: #0056b3;
+}
+
+/* Focus effect for the input */
+input[type="number"]:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+
+/* Table Styling for Summary */
+.summary-table {
+  font-size: 12px;
+  width: 90%;
+  margin: 20px auto;
+  /* margin-top: 50px; */
+}
+
+.summary-table th, .summary-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Prevent wrapping by default */
+}
+
+.summary-table th {
+  background-color: #f2f2f2;
+}
+
+/* Fixing the width of each column in Summary Table */
+.summary-table th:nth-child(1), .summary-table td:nth-child(1) {
+  width: 2%; /* Set a fixed width for the first column */
+  text-align: center;
+}
+
+.summary-table th:nth-child(2), .summary-table td:nth-child(2),
+.summary-table th:nth-child(3), .summary-table td:nth-child(3) {
+  width: 7%; /* Set a fixed width for specific columns */
+  text-align: center;
+}
+
+.summary-table td:nth-child(4) {
+  width: 20%;
+  word-wrap: break-word;
+}
+
+.summary-table td:nth-child(5) {
+  word-wrap: break-word;
+  white-space: normal; /* Allow wrapping specifically for the Summary column */
+}
+
+/* Subtitles - Second Tab*/
+
+.sub-title2 {
+  font-family: 'Tinos', serif;
+  color: #1B7593;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-title3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.summary-text {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  /* margin-top: 10px; */
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+
+/* Center the entire filter container */
+.filter-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  /* gap: 20px; */
+  background-color: #D1E3E980; /* Light blue background */
+  padding-top: 10px; /* Add padding for spacing inside the container */
+  padding-bottom: 20px; /* Add padding for spacing inside the container */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 80%; /* Set a fixed width for the container */
+}
+
+
+/* Button */
+
+.button-table-container {
+  width: 1300px;
+  margin: 10px auto;
+}
+
+button {
+  padding: 10px 15px; 
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #1B7593;
+  color: #FFF9F0;
+  border: none;
+  border-radius: 8px;
+}
+
+
+/* Table Styling for Original Data */
+.original-table {
+  width: 100%; /* Fixed width relative to the page */
+  margin: 10px auto; /* Center the table */
+  font-size: 12px;
+  table-layout: fixed; /* Ensures the table adheres to the set width */
+}
+
+.original-table th, .original-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Prevent wrapping by default */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for truncated content */
+}
+
+.original-table th {
+  background-color: #f2f2f2;
+}
+
+.original-table th:nth-child(1), .original-table td:nth-child(1) {
+  width: 11%; /* Fixed width for the first column */
+  text-align: center;
+}
+
+.original-table th:nth-child(2), .original-table td:nth-child(2) {
+  width: 6%; /* Fixed width for the first column */
+  text-align: center;
+}
+
+.original-table td:nth-child(3), .original-table td:nth-child(3) {
+  white-space: normal; /* Allow wrapping for specific columns */
+  word-wrap: break-word; /* Ensure long words break */
+}
+
+.original-table th:nth-child(4), .original-table td:nth-child(4) {
+  width: 8%; /* Fixed width for the fourth column */
+  text-align: center;
+}
